@@ -1,0 +1,96 @@
+#libraries {
+  padding: 5%;
+  margin-top: 100px;
+  color: blue;
+}
+
+#libraries h2{
+  text-align: center;
+
+}
+
+#signup {
+  margin-left: -300px;
+  cursor: pointer;
+}
+#sub{
+  margin-top: -50px;
+  margin-bottom: -250px;
+}
+
+#img {
+  padding: 1px;
+  height: 250px;
+  margin-top: 10px;
+  border-radius: 10px;
+  display: inline-block;
+
+  /*transition: all 0.3s ease-in;*/
+}
+
+.computer h4 {
+  position:absolute;
+  cursor: pointer;
+  margin-left: -3%;
+  margin-top: 9px;
+}
+#cs {
+  width: 350px;
+  height: 250px;
+  margin-left: -3%;
+  margin-top: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.electric h4 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 377px;
+  cursor: pointer;
+}
+#eet {
+  width: 350px;
+  height: 250px;
+  margin-top: -200px;
+  margin-left: 370px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.mechanics h4 {
+  position: absolute;
+  margin-top: 10px;
+  margin-left: 793px;
+  cursor: pointer;
+}
+#met {
+  width: 350px;
+  height: 250px;
+  margin-top: -190px;
+  margin-left: 780px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.economics h4 {
+  position: absolute;
+  margin-top: 1px;
+  margin-left: 1190px;
+  cursor: pointer;
+}
+#econ {
+  width: 350px;
+  height: 250px;
+  margin-top: -240px;
+  margin-left: 1190px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+h4 {
+  text-align: center;
+}
+h6 {
+  text-align: center;
+}
