@@ -1,21 +1,17 @@
 import "./App.css";
 import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import React from "react";
-//import { BrowserRouter, Routes, Route } from "react-router-dom";
-
-//import image from "./components/library1.jpeg";
-//import Login from "./components/login";
 import About from "./components/HomePage/about";
 import Footer from "./components/HomePage/footer";
 import Libraries from "./components/HomePage/Libraries";
 import Navbar from "./components/HomePage/Navbar";
-//import Books from './components/HomePage/Books';
-//import Subscriber from './components/register';
 import { Link } from "react-router-dom";
-//import Books from "./components/studentPage/component/pages/Books";
-//import AddBook from './components/librarianPage/addBook';
 
 function App() {
+  const handleAdminClick = () => {
+    window.location.href = "http://localhost:3001";
+  };
+
   return (
     <div>
       <Navbar />
@@ -23,7 +19,6 @@ function App() {
       <div className="back-image">
         <section id="contact">
           <h1 className="color">
-            {" "}
             WELCOME TO OUR <br /> LIBRARY MANAGEMENT SYSTEM
           </h1>
         </section>
@@ -34,15 +29,16 @@ function App() {
               Subscriber
             </button>
           </Link>
-          <Link to="/Apps">
-            <button
-              className="btn btn-dark btn-lg btn-block"
-              id="admin"
-            >
-              Administrator
-            </button>
-          </Link>
+
+          <button
+            className="btn btn-dark btn-lg btn-block"
+            id="admin"
+            onClick={handleAdminClick}
+          >
+            Administrator
+          </button>
         </div>
+
         <div id="bottom">
           <Libraries />
           <About />

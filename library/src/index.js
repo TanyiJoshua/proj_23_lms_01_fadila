@@ -2,7 +2,6 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import reportWebVitals from "./reportWebVitals";
 import Registration from "./components/register";
 //import LibrarianLog from "./components/librarianPage/LibrarianLog";
@@ -15,59 +14,27 @@ import Mechanics from "./components/studentPage/components/Subscriber/Daashboard
 import Economics from "./components/studentPage/components/Subscriber/Daashboard/Economics/Economics";
 //import WillyHome from "./components/studentPage/components/Subscriber/WillyHome";
 import Account from "./components/studentPage/components/Subscriber/MyAccount/Account";
-//import Apps from "./components/librarianPage/frontend/src/Apps";
+//import Apps from "./components/librarianPage/frontend/src/Apps"
 //import BookLists from "./components/studentPage/component/pages/Books";
-
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <App />,
-  },
-
-  {
-    path: "/register",
-    element: <Registration />,
-  },
-  /*{
-    path: "/Apps",
-    element: <Apps />,
-  },*/
-  {
-    path: "/Books",
-    element: <Books />,
-  },
-  {
-    path: "/Account",
-    element: <Account />,
-  },
-
-  {
-    path: "/Books/:id",
-    element: <BookDetails />,
-  },
-  {
-    path: "/Computer",
-    element: <Computer />,
-  },
-  {
-    path: "/EET",
-    element: <EET />,
-  },
-  {
-    path: "/Mechanics",
-    element: <Mechanics />,
-  },
-  {
-    path: "/Economic",
-    element: <Economics />,
-  },
-]);
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <AppProvider>
     <React.StrictMode>
-      <RouterProvider router={router} />
+     <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<App />} />
+        <Route path="/register" element={<Registration />} />
+        <Route path="/Books" element={<Books />} />
+        <Route path="/Account" element={<Account />} />
+        <Route path="/Books/:id" element={<BookDetails />} />
+        <Route path="/Computer" element={<Computer />} />
+        <Route path="/EET" element={<EET />} />
+        <Route path="/Mechanics" element={<Mechanics />} />
+        <Route path="/Economic" element={<Economics />} />
+      </Routes>
+    </BrowserRouter>
     </React.StrictMode>
   </AppProvider>
 );
