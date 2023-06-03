@@ -5,8 +5,11 @@
 .book {
   background: url("library.jpg") no-repeat;
   background-size: 100%;
-  height: 2000px;
+  height: 2500px;
 }
 #books{
   text-align: center;
+}
+.books-body{
+  margin-top: -2065px;
 }

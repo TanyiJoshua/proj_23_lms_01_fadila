@@ -11,13 +11,13 @@ export default class Books extends Component {
       <div id="books">
           <div>
             <h2>
-              <strong> BOOKS </strong>
+              <strong> LIBRARY BOOKS </strong>
             </h2>
             <div className="book">
               <SearchForm />
             </div>
           </div>
-          <div className=" books-body">
+          <div className="books-body">
             <BookList />
           </div>
       </div>
