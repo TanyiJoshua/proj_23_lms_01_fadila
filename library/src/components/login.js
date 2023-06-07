@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./Login.css";
 import { Alert } from "react-bootstrap";
-
+import Navbar from '../components/HomePage/Navbar';
+import Footer from '../components/HomePage/footer';
 import WillyHome from "./studentPage/components/Subscriber/WillyHome";
 
 function Login() {
@@ -34,6 +35,7 @@ function Login() {
 
   return (
     <div className="outer">
+      <Navbar/>
       {subscriberStatus ? (
         <div className="style">
           <div className="inner">
@@ -75,6 +77,7 @@ function Login() {
               )}
             </form>
           </div>
+          <Footer/>
         </div>
       ) : (
         <WillyHome />

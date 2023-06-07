@@ -42,7 +42,7 @@ function App() {
         <div id="bottom">
           <Libraries />
           <About />
-          <Footer> </Footer>
+          <Footer/>
         </div>
       </div>
     </div>

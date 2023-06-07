@@ -1,0 +1,19 @@
+/* In a separate CSS file or inline styles */
+/* In a separate CSS file or inline styles */
+.myAppBar {
+  width: 100%;
+  background-color: blue;
+}
+
+.myAppBar .toolbar {
+  background: url("library.jpg") no-repeat;
+  background-size: cover;
+}
+
+.myTitle {
+    font-family: monospace;
+    font-weight: 700;
+    letter-spacing: 0.3rem;
+    color: white;
+  }
+  

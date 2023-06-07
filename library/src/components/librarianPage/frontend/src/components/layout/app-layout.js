@@ -22,6 +22,8 @@ import { BookForm } from "../book-form/book-form"
 import { Book } from "../book/book"
 import { WithLoginProtector } from "../access-control/login-protector"
 import { WithAdminProtector } from "../access-control/admin-protector"
+import "./layoutStyles.css";
+//import Footer from "./footer"
 
 
 export const AppLayout = () => {
@@ -64,21 +66,18 @@ export const AppLayout = () => {
 
     return (
         <>
-            <AppBar position="static">
-                <Container maxWidth="xl">
-                    <Toolbar disableGutters>
+            <AppBar position="static" className="myAppbar">
+                <Container maxWidth="x1">
+                    <Toolbar disableGutters className="toolbar">
                         <AdbIcon sx={{ display: "flex", mr: 1 }} />
                         <Link to="/" style={{ textDecoration: "none", flexGrow: 1 }}>
                             <Typography
                                 variant="h6"
                                 noWrap
+                                className="myTitle"
                                 sx={{
                                     mr: 2,
                                     display: "flex",
-                                    fontFamily: "monospace",
-                                    fontWeight: 700,
-                                    letterSpacing: ".3rem",
-                                    color: "white",
                                 }}
                             >
                                 Library Management System
@@ -172,6 +171,9 @@ export const AppLayout = () => {
                 handleSubmit={handleLoginSubmit}
                 handleClose={handleLoginClose}
             />
+            
         </>
+        
     )
+    
 }
